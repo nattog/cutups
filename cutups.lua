@@ -44,7 +44,7 @@ local m = metro.init()
 
 function update_positions(i,pos)
   positions[i] = pos
-  if positions[i] < cuts[1] then
+  if positions[i] < cuts[1] then -- random updates
     if math.random() > 0.75 then
       positions[i] = cuts[1]
       softcut.loop_start(1, cuts[1])
