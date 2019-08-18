@@ -36,6 +36,8 @@ function update_file()
   file_length = file_dur / file_sr
   cuts = cutup(true, file_length)
   length = file_length
+  params:clear()
+  init()
 end
 
 local m = metro.init()
